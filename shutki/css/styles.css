@@ -1,0 +1,669 @@
+/*
+ * "It’s art if can’t be explained. It’s fashion if no one asks for an
+ * explanation. It’s design if it doesn’t need explanation."
+ *
+ * ~ Wouter Stokkel
+ */
+
+
+ /* Fonts
+ * --------*/
+@font-face {
+	font-family: DaysWeb;
+	src: url("../fonts/days.otf") format("opentype");
+}
+
+
+/* Backgrounds will cover all the section
+ * --------------------------------------- */
+.section{
+	background-size: cover;
+}
+
+.slide{
+	background-size: cover;
+}
+
+
+/* Specific styling
+ *---------------------*/
+#bg_01_img, #logo_img {
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.about_section_wrapper {
+	width: 100%;
+	height: 100%;
+
+    background: #010727; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#010727, #00020e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#010727, #00020e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#010727, #00020e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#010727, #00020e); /* Standard syntax */
+}
+
+.rules_wrapper {
+	width: 100%;
+	height: 100%;
+
+	padding-top: 50px;
+
+	background-image: url("../images/logo_400.png");
+    background-repeat: no-repeat;
+    background-position: 50% 70%;
+}
+
+.rules_wrapper .info_block {
+	width: 30%;
+	height: 20%;
+
+	background-color: rgba(232,232,232,1);
+
+	margin-left: 40px;
+	margin-right: 40px;
+	margin-bottom: 10px;
+	margin-top: 10px;
+
+	display: inline-block;
+	float: left;
+
+	font-family: DaysWeb;
+	font-size: 15px;
+
+	padding: 15px;
+	line-height: 22px;
+
+	-moz-box-shadow:    3px 3px 5px 6px #b4842c;
+	-webkit-box-shadow: 3px 3px 5px 6px #b4842c;
+	box-shadow:         3px 3px 5px 6px #b4842c;
+}
+
+.rules_wrapper .info_block p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+
+.rules_wrapper .info_block.top {
+	width: 80%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	float: none;
+
+	font-family: DaysWeb;
+	font-size: 15px;
+
+	padding: 15px;
+	line-height: 22px;
+
+	height: 24%;
+}
+
+.rules_wrapper .info_block.top p {
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+
+.rules_wrapper .info_block.bottom {
+	width: 80%;
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+	margin-top: 20px;
+
+	float: none;
+
+	clear: both;
+
+	height: 8%;
+}
+
+
+.rules_wrapper .info_block.left {
+	float: left;
+
+	height: 16%;
+}
+.rules_wrapper .info_block.right {
+	float: right;
+
+	height: 16%;
+}
+
+.rules_wrapper .info_block.left.bot {
+	float: left;
+	margin-bottom: 20px;
+
+	height: 19%;
+}
+.rules_wrapper .info_block.right.bot {
+	float: right;
+	margin-bottom: 20px;
+
+	height: 19%;
+}
+
+
+.contacts_wrapper {
+
+}
+
+.contacts_wrapper .header {
+    background: #8BC5BF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 300px;
+    z-index: 1;
+}
+
+.contacts_wrapper .main {
+    /* border: 1px #616363 solid; */
+    /* margin: 0 auto; */
+
+    position: relative;
+
+    z-index: 2;
+
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.contacts_wrapper .main .content {
+	padding-top: 100px;
+	display: inline;
+	/* clear: both; */
+	float: left;
+
+	width: 40%;
+
+	height: 500px;
+
+	/* border-top: 1px #616363 solid; */
+
+    z-index: 3;
+}
+
+.contacts_wrapper .main .content .buttons {
+	padding-top: 150px;
+	display: block;
+	clear: both;
+
+
+	font-family: DaysWeb;
+	font-size: 15px;
+
+	text-align: center;
+}
+
+.contacts_wrapper .main .info {
+	padding-top: 100px;
+	display: inline;
+	/* clear: both; */
+	float: right;
+
+	height: 500px;
+
+	width: 40%;
+	/* border-top: 1px #616363 solid; */
+
+    z-index: 3;
+}
+
+.contacts_wrapper .main .info .text {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+.contacts_wrapper .main .info .text h1 {
+	font-family: DaysWeb;
+	font-size: 20px;
+
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    background: #E7B44C;
+    color: #FFF;
+
+    height: 50px;
+
+    line-height: 10px;
+    padding-top: 40px;
+    padding-left: 100px;
+}
+
+.contacts_wrapper .main .info .text p {
+	padding-top:  100px;
+
+	font-family: DaysWeb;
+	font-size: 14px;
+}
+
+.contacts_wrapper .main .info .photo {
+
+}
+
+.offer_wrapper {
+	width: 90%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.offer_wrapper .container {
+    display: inline;
+    float: left;
+    margin: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    width: 18%;
+    padding-top: 120px;
+    padding-left: 26px;
+    overflow: hidden;
+}
+
+.offer_wrapper .container .inner {
+    display: inline-block;
+    position: relative;
+    right: 0;
+    width: 100%;
+}
+
+
+.offer_wrapper .container .icon {
+	text-align: center;
+    cursor: pointer;
+}
+
+.modal {
+	background-color: #FFF;
+    width: 800px;
+    border: #000 solid 1px;
+    border-radius: 10px;
+    box-shadow: 0 8px 6px -6px black;
+    text-align: left;
+    display: none;
+    padding: 30px;
+
+    height: 525px;
+
+
+    background: #010727; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#010727, #00020e); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#010727, #00020e); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#010727, #00020e); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#010727, #00020e); /* Standard syntax */
+}
+
+.modal .image {
+	display: inline;
+	float: left;
+	width: 25%;
+
+}
+
+.modal .image img {
+	margin-top: 75px;
+	width: 100%;
+
+}
+
+.modal .info {
+	display: inline;
+	float: right;
+	width: 70%;
+}
+
+.modal p {
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+	font-family: DaysWeb;
+	font-size: 12px;
+
+	line-height: 16px;
+
+	color: #838baf;
+}
+
+.modal .title {
+	color: #f5c248;
+    font-family: "Book Antiqua",serif;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 27px;
+    margin: 0;
+    padding: 0;
+}
+
+.modal .subtitle {
+    color: #b5bee6;
+    font-size: 17px;
+    font-weight: normal;
+    letter-spacing: 0;
+    padding: 0 0 15px 0;
+}
+
+
+.sr-only {
+	position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;
+}
+
+.close {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    color: #000;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 0.8;
+
+	position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+}
+
+.button.close {
+    -webkit-appearance: none;
+    padding: 0;
+    cursor: pointer;
+    background: 0 0;
+    border: 0;
+    cursor: pointer;
+}
+
+.offer_wrapper .container .title {
+	font-family: DaysWeb;
+	font-size: 22px;
+    cursor: pointer;
+
+	margin-top: 10px;
+
+	color: #000000;
+	text-shadow: 0 0 0.2em #87F, 0 0 0.2em #87F, 0 0 0.2em #87F;
+
+	text-align: center;
+}
+
+.offer_wrapper .container .inner img {
+    opacity: 0.45;
+    width: 100%;
+
+    cursor: pointer;
+}
+
+#DIV_1 {
+    color: rgb(255, 255, 255);
+    float: left;
+    height: 335px;
+    width: 360px;
+    perspective-origin: 150px 205.797px;
+    transform-origin: 150px 205.797px;
+    background: rgb(85, 164, 149) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(255, 255, 255);
+    font: normal normal normal normal 16px / normal SackersGothicW01-Medium;
+    outline: rgb(255, 255, 255) none 0px;
+    padding: 10px 20px 40px;
+}/*#DIV_1*/
+
+#H4_2, #H4_4, #H4_6 {
+    color: rgb(41, 116, 106);
+    height: 60px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    width: 260px;
+    perspective-origin: 130px 10.5px;
+    transform-origin: 130px 10.5px;
+    border: 0px none rgb(41, 116, 106);
+	font-family: DaysWeb;
+	font-size: 24px;
+    margin: 21.28px 0px;
+    outline: rgb(41, 116, 106) none 0px;
+}/*#H4_2, #H4_4, #H4_6*/
+
+#H6_3, #H6_5, #H6_51, #H6_8, #H6_11 {
+    color: rgb(196, 225, 222);
+    height: 30px;
+    width: 260px;
+    perspective-origin: 130px 7.5px;
+    transform-origin: 130px 7.5px;
+    border: 0px none rgb(196, 225, 222);
+	font-family: DaysWeb;
+	font-size: 18px;
+    margin: 10px;
+    outline: rgb(196, 225, 222) none 0px;
+}/*#H6_3, #H6_5, #H6_8, #H6_11, #H6_14*/
+
+#H4_6 {
+	height: 30px;
+}
+
+#H5_7, #H5_10, #H5_13 {
+    color: rgb(255, 255, 255);
+    height: 17px;
+    text-transform: lowercase;
+    width: 260px;
+    perspective-origin: 130px 8.5px;
+    transform-origin: 130px 8.5px;
+    border: 0px none rgb(255, 255, 255);
+	font-family: DaysWeb;
+	font-size: 10px;
+    margin: 15px 0px 5px;
+    outline: rgb(255, 255, 255) none 0px;
+}/*#H5_7, #H5_10, #H5_13*/
+
+#A_9, #A_12 {
+    color: rgb(196, 225, 222);
+    text-decoration: none;
+    border: 0px none rgb(196, 225, 222);
+	font-family: DaysWeb;
+	font-size: 18px;
+    outline: rgb(196, 225, 222) none 0px;
+    transition: color 0.1s linear 0s;
+}/*#A_9, #A_12*/
+
+#A_15 {
+    color: rgb(196, 225, 222);
+    text-decoration: none;
+    border: 0px none rgb(196, 225, 222);
+	font-family: DaysWeb;
+	font-size: 10px;
+    outline: rgb(196, 225, 222) none 0px;
+    transition: color 0.1s linear 0s;
+}/*#A_15*/
+
+
+
+/* Menu stuff
+ * --------------------------------------- */
+
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	font-family: DaysWeb;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active,
+#menu li.active:hover{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	position:fixed;
+	top:0;
+	left:0;
+	height: 40px;
+	z-index: 70;
+	width: 100%;
+	padding: 0;
+	margin:0;
+}
+
+.about_info {
+	width: 85%;
+	margin-left: auto;
+	margin-right: auto;
+
+	height: 100%;
+
+	background-image: url("../images/photo_about.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+.about_info .text {
+	padding-top: 100px;
+}
+
+#title_about_us {
+    color: rgb(245, 194, 72);
+    letter-spacing: -1px;
+    text-align: left;
+    perspective-origin: 33px 13.5px;
+    transform-origin: 33px 13.5px;
+    border: 0px none rgb(245, 194, 72);
+    border-spacing: 2px 2px;
+    font: normal normal normal normal 37px / 37px 'Book Antiqua', serif;
+    margin: 0px;
+    outline: rgb(245, 194, 72) none 0px;
+}
+
+#subtitle_about_us {
+    border-collapse: collapse;
+    color: rgb(181, 190, 230);
+    text-align: left;
+    perspective-origin: 305px 17.5px;
+    transform-origin: 305px 17.5px;
+    border: 0px none rgb(181, 190, 230);
+    font: normal normal normal normal 28px / 28px Verdana, Tahoma, Arial, sans-serif;
+    margin: 0px;
+    outline: rgb(181, 190, 230) none 0px;
+    padding: 0px 0px 15px;
+}
+
+#about_par1, #about_par2 {
+    border-collapse: collapse;
+    color: rgb(131, 139, 175);
+    text-align: left;
+    perspective-origin: 305px 70px;
+    transform-origin: 305px 70px;
+    border: 0px none rgb(131, 139, 175);
+    font: normal normal normal normal 20px / 20px Verdana, Tahoma, Arial, sans-serif;
+    margin: 0px;
+    outline: rgb(131, 139, 175) none 0px;
+    padding: 0px 0px 20px;
+}
+
+.photo_wrapper {
+	width: 90%;
+
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.photo_wrapper .header {
+	display: block;
+	clear: both;
+	width: 100%;
+	height: 100px;
+}
+
+.grid-item {
+  float: left;
+  width: 300px;
+  height: 300px;
+
+  margin: 12px;
+}
+
+
+.grid-item img {
+	max-height:100%; max-width:100%;
+}
+
+
+.news_wrapper {
+	width: 90%;
+	height: 100%;
+}
+
+.news_wrapper .header {
+	height: 100px;
+	display: block;
+	clear: both;
+	width: 100%;
+}
+
+.news_wrapper .text_news {
+	display: block;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 100px;
+}
+
+.news_wrapper .text_news p {
+	color: #000;
+	font-family: DaysWeb;
+	font-size: 20px;
+	line-height: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.news_wrapper .text_news p.xlarge {
+	font-size: 32px;
+}
+
+.news_wrapper .text_news p.large {
+	font-size: 24px;
+}
+
+.news_wrapper img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-height:80%; max-width:90%;
+}
